@@ -1,0 +1,44 @@
+site_name: WriteAway Handbook
+site_url: https://bceln.github.io/writeaway
+repo_url: https://github.com/bceln/writeaway-docs
+edit_uri: edit/main/docs
+
+
+theme:
+  name: material
+  logo: 'assets/bceln_logo.jpg'
+  palette:
+    primary: 'purple'
+    accent: 'yellow'
+  language: 'en'
+  features:
+    - content.action.edit
+    - content.action.view
+    - announce.dismiss
+  icon:
+    edit: material/pencil
+    view: material/eye
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+        permalink: True
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Tutors: tutors/tutors.md
+  - Coordinators: coordinators/coordinators.md
+  - About:
+    - About: about/about.md
+    - Support: about/support.md
